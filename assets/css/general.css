@@ -1,0 +1,92 @@
+body {
+    background-color: #111;
+    color: white;
+}
+
+.header-section {
+    background-image: url('your-background-image.jpg'); /* Aquí coloca la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.header-section .container {
+    background: rgba(0, 0, 0, 0.7); /* Oscurecer un poco para destacar el texto */
+    padding: 50px;
+}
+
+.header-section h1 {
+    font-size: 3rem;
+    color: #FFD700;
+}
+
+.token-info {
+    padding: 50px 0;
+    background-color: #222;
+}
+
+.token-info .container {
+    background-color: #333; /* Fondo dentro del contenedor */
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.token-info h2 {
+    text-align: center;
+    color: #FFD700;
+}
+
+.price-section {
+    background-color: #222;
+    padding: 30px 0;
+}
+
+.buy-section {
+    padding: 50px 0;
+}
+
+.buy-section .container {
+    background-color: #444; /* Fondo dentro del contenedor */
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.buy-section img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+.footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.navbar {
+    background-color: #222;
+}
+
+.navbar a {
+    color: #FFD700;
+}
+
+.navbar a:hover {
+    color: #FFF;
+}
+
+.gallery-section {
+    padding: 50px 0;
+}
+
+.gallery-section .container {
+    background-color: #333; /* Fondo dentro del contenedor */
+    padding: 30px;
+    border-radius: 10px;
+}
