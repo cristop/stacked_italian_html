@@ -4,7 +4,7 @@ body {
 }
 
 .header-section {
-    background-image: url('your-background-image.jpg'); /* Aquí coloca la imagen de fondo */
+    background-image: url('/assets/img/slide1.jpeg'); /* Aquí coloca la imagen de fondo */
     background-size: cover;
     background-position: center;
     padding: 100px 0;
@@ -21,8 +21,20 @@ body {
 }
 
 .token-info {
-    padding: 50px 0;
     background-color: #222;
+    background-image: url('/assets/img/bg-lineas.jpg');
+}
+
+.token-info::before{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-image: url(/assets/img/trama-de-lineas-slide-3.png);
+    background-size: contain;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 .token-info .container {
