@@ -67,7 +67,11 @@
 <section class="buy-section" id="how-to-buy">
     <div class="container text-center">
         <h2>How to Buy</h2>
-        <img src="your-image-or-video-thumbnail.jpg" alt="Video Thumbnail">
+        <div class="p-sm-5 mt-sm-0 mt-4">
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/ZU2Sd9guSjI?si=2x-mwiCyvlld9IjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -102,11 +106,36 @@
 <!-- Footer Section -->
 <footer class="footer" id="socials">
     <div class="container">
-        <p>&copy; 2024 Stacked Italian Token. All Rights Reserved.</p>
         <div>
-            <a href="#"><img src="telegram-icon.png" alt="Telegram"></a>
-            <a href="#"><img src="discord-icon.png" alt="Discord"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="/assets/img/twitter.svg" alt="Telegram"></a>
+            <a href="#"><img src="/assets/img/pdf.svg" alt="pdf"></a>
+            <a href="#"><img src="/assets/img/telegram.svg" alt="Twitter"></a>
+        </div>
+
+        <div class="mt-5">
+            <p><strong>STACKED Token:</strong> 0123456947 <img src="assets/img/clipboard01.svg" class="w-auto mx-1" height="15" alt=""></p>
+        </div>
+
+        <small class="d-block mt-3">&copy; 2024 Stacked Italian Token. All Rights Reserved.</small>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-transparent border-0 text-white fw-semibold " data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Disclaimer
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ducimus nostrum vero a natus, culpa, esse est deserunt aspernatur sequi voluptate! Facere consequatur, voluptate nobis adipisci et expedita porro! Dolor?
+                </div>
+            </div>
+            </div>
         </div>
     </div>
 </footer>
