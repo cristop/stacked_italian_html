@@ -1,17 +1,22 @@
 body {
     background-color: #111;
     color: white;
+    background-image: url('../img/FONDO-DE-WEBDESENF.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container{
+    max-width: 950px;
 }
 
 .header-section {
-    background-image: url('/assets/img/FONDO-DE-WEBDESENF.jpeg'); /* Aquí coloca la imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
+    
 }
 
 .header-section .container {
-    background-image: url('/assets/img/slide1.jpeg'); /* Aquí coloca la imagen de fondo */
+    background-image: url('../img/slide1.jpeg'); 
     background-size: cover;
     background-position: center;
     padding: 100px 0;
@@ -24,7 +29,7 @@ body {
 
 .token-info .container, .gallery-section .container {
     background-color: #222;
-    background-image: url('/assets/img/bg-lineas.jpg');
+    background-image: url('../img/bg-lineas.jpg');
 }
 
 .token-info .container::before, .gallery-section .container::before{
@@ -32,7 +37,7 @@ body {
     content: "";
     position: absolute;
     width: 100%;
-    background-image: url(/assets/img/trama-de-lineas-slide-3.png);
+    background-image: url(../img/trama-de-lineas-slide-3.png);
     background-size: cover;
     height: 100%;
     top: 0;
@@ -40,9 +45,8 @@ body {
 }
 
 .token-info .container {
-    background-color: #333; /* Fondo dentro del contenedor */
+    background-color: #333; 
     padding: 50px;
-    border-radius: 10px;
 }
 
 .token-info h2 {
@@ -56,13 +60,12 @@ body {
 }
 
 .buy-section {
-    padding: 50px 0;
+    /* padding: 50px 0; */
 }
 
 .buy-section .container {
     background-color: #444; /* Fondo dentro del contenedor */
     padding: 50px;
-    border-radius: 10px;
 }
 
 .buy-section img {
@@ -73,8 +76,6 @@ body {
 }
 
 .footer {
-    background-color: #111;
-    padding: 20px;
     text-align: center;
 }
 
@@ -96,13 +97,12 @@ body {
 }
 
 .gallery-section {
-    padding: 50px 0;
+    /* padding: 50px 0; */
 }
 
 .gallery-section .container {
     background-color: #333; /* Fondo dentro del contenedor */
     padding: 30px;
-    border-radius: 10px;
 }
 
 .modal-content{
@@ -125,7 +125,6 @@ body {
 }
 
 .gallery-section {
-    padding: 20px;
 }
 
 .tns-nav {
@@ -152,6 +151,6 @@ body {
 }
 
 footer .container{
-    background-image: url('/assets/img/slide4.png');
+    background-image: url('../img/slide4.png');
     background-size: cover;
 }
