@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stacked Italian</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link href="assets/css/general.css" rel="stylesheet">
 </head>
 <body>
@@ -39,7 +40,7 @@
 
 <!-- Header Section -->
 <section class="header-section">
-    <div class="container text-center">
+    <div class="container text-center rounded-4">
         <h1>STACKED ITALIAN</h1>
         <p>A legacy meme token designed to ride the wake of the SOLID index</p>
     </div>
@@ -48,16 +49,18 @@
 <!-- Token Info Section -->
 <section class="token-info position-relative py-5">
     <div class="container position-relative">
-        <h2>Token Information</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Price: $0.002839</h3>
-                <p>Market Cap: $1.2M</p>
-                <p>Liquidity: $14K</p>
-            </div>
-            <div class="col-md-6">
-                <h3>Stack 1000 Tokens</h3>
-                <p>Price: 0.00238 SOLIDX</p>
+        <div class="z-1 position-relative">
+            <h2>Token Information</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Price: $0.002839</h3>
+                    <p>Market Cap: $1.2M</p>
+                    <p>Liquidity: $14K</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Stack 1000 Tokens</h3>
+                    <p>Price: 0.00238 SOLIDX</p>
+                </div>
             </div>
         </div>
     </div>
@@ -75,37 +78,36 @@
     </div>
 </section>
 
+
 <!-- Gallery Section -->
 <section class="gallery-section" id="gallery">
-    <div class="container">
-        <h2 class="text-center">Gallery</h2>
-        <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="image1.jpg" class="d-block w-100" alt="...">
+    <div class="container position-relative">
+        <div class="position-relative z-1">
+            <h2 class="text-center mb-4 py-3">Gallery</h2>
+            <div class="my-slider">
+                <div>
+                    <img src="assets/img/carousel01.jpg" alt="...">
                 </div>
-                <div class="carousel-item">
-                    <img src="image2.jpg" class="d-block w-100" alt="...">
+                <div>
+                    <img src="assets/img/carousel02.jpg" alt="...">
                 </div>
-                <div class="carousel-item">
-                    <img src="image3.jpg" class="d-block w-100" alt="...">
+                <div>
+                    <img src="assets/img/carousel03.jpg" alt="...">
                 </div>
+                <div>
+                    <img src="assets/img/carousel03.jpg" alt="...">
+                </div>
+                <!-- Añade más imágenes si lo necesitas -->
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </div>
 </section>
 
+
+
 <!-- Footer Section -->
 <footer class="footer" id="socials">
-    <div class="container">
+    <div class="container py-5 rounded-4">
         <div>
             <a href="#"><img src="/assets/img/twitter.svg" alt="Telegram"></a>
             <a href="#"><img src="/assets/img/pdf.svg" alt="pdf"></a>
@@ -141,5 +143,36 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+    <script>
+        var slider = tns({
+            container: '.my-slider',
+            items: 3, // Mostrar 3 ítems a la vez
+            slideBy: '1', // Moverse de a 1 ítem
+            autoplay: true, // Activar autoplay
+            autoplayTimeout: 3000, // Intervalo de 3 segundos
+            controls: false, // Ocultar los controles (prev/next)
+            nav: true, // Ocultar puntos de navegación
+            mouseDrag: true, // Arrastrar con el ratón
+            loop: true, // Carrusel en bucle
+            gutter: 10, // Ajustar espacio entre imágenes (en píxeles)
+            responsive: {
+                0: {
+                    items: 1, // Mostrar 1 ítem en pantallas pequeñas
+                    gutter: 5 // Menor espacio entre ítems en pantallas pequeñas
+                },
+                600: {
+                    items: 2, // Mostrar 2 ítems en pantallas medianas
+                    gutter: 5
+                },
+                1000: {
+                    items: 3, // Mostrar 3 ítems en pantallas grandes
+                    gutter: 5
+                }
+            }
+        });
+    </script>
+
 </body>
 </html>

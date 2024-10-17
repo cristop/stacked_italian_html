@@ -22,12 +22,12 @@ body {
     color: #FFD700;
 }
 
-.token-info {
+.token-info .container, .gallery-section .container {
     background-color: #222;
     background-image: url('/assets/img/bg-lineas.jpg');
 }
 
-.token-info::before{
+.token-info .container::before, .gallery-section .container::before{
     display: block;
     content: "";
     position: absolute;
@@ -107,4 +107,51 @@ body {
 
 .modal-content{
     background-color: #333;
+}
+
+.tns-outer button{
+    display: none;
+}
+
+.my-slider img {
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.tns-item {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-section {
+    padding: 20px;
+}
+
+.tns-nav {
+    text-align: center; /* Centra los indicadores */
+    margin-top: 15px; /* Espacio entre los indicadores y el carrusel */
+}
+
+.tns-nav button {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%; 
+    border: none;
+    margin: 0 5px; 
+}
+
+.tns-nav button.tns-nav-active {
+    background-color: #333; 
+}
+
+.tns-nav button:hover {
+    cursor: pointer;
+    background-color: #835098;
+}
+
+footer .container{
+    background-image: url('/assets/img/slide4.png');
+    background-size: cover;
 }
